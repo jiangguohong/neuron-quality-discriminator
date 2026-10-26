@@ -4,7 +4,7 @@ D-15 步骤：重生 MANIFEST（脱敏后版本）
 - 丢弃「二、原路径映射」（内部追溯，不随 public 出库）→ 移入私有台账
 - 重算 20 件资产 sha256/字节/行数（脱敏后）
 - 加脱敏声明
-私有台账写在 repo 外：D:/agent_shared/v17_final_internal/_D15_INTERNAL_LEDGER.md
+私有台账写在 repo 外：<INTERNAL_LEDGER>（仓外路径，不随 public 出库）
 """
 import hashlib, re, os, datetime
 

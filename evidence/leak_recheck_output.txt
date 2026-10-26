@@ -1,0 +1,14 @@
+# verify_v17_final.py 输出（run_v17_gates leak_recheck 进程级重定向落盘）
+# 时间: 2026-10-21 17:22:00
+
+V1 ✅ 行数=558 keep=250 reject=308（应 558/250/308）
+V2 ✅ eval_hit 7 条在终版中出现: 无
+V3 ✅ head 三口径：head_final_strict=116（判据，六字段全）｜ head_loose=118（参考，类型+摘要）｜ head_half_rows=2=['HYA-REJ-001', 'HYA-REJ-008']（cluster_summary 缺「来源记忆」）｜ 151-33 派生式禁作登记值（LH R91 §2）
+V4 ✅ 三维零交集：文本=0 pid=0 组合语义=0（应全 0）
+V5 ✅ LP-WD 实并 13 条（076 在? False）
+
+终版凭据: C:\Users\<USER>\WorkBuddy\2026-10-10-06-58-10\neuron_quality\v17\v01_train.jsonl
+  sha256 = fed6726ecf0f05eabb068a37df4414132e468bb304675a301fa927a722dc0750
+  bytes  = 436321  lines = 558
+
+复验总结: 全部 PASS ✅

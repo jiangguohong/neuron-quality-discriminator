@@ -1,0 +1,53 @@
+{
+  "purpose": "val168 档泄漏三数单独凭据（闭合 DSH 侧不可测的第三视角）",
+  "ruling": "LH R91 §6 / R92 挂账1",
+  "train_corpus": {
+    "path": "v17/v01_train.jsonl",
+    "sha256": "fed6726ecf0f05eabb068a37df4414132e468bb304675a301fa927a722dc0750",
+    "sha16": "fed6726ecf0f05ea",
+    "bytes": 436321,
+    "lines": 558
+  },
+  "gates": {
+    "basis63": {
+      "text_hits": 0,
+      "pid_hits": 0,
+      "combo_hits": 0,
+      "n_eval_items": 63,
+      "source": {
+        "path": "v04_eval63\\v04_eval_basis63.json",
+        "sha16": "fa4746a64c5c360e",
+        "sha256": "fa4746a64c5c360ed42dfaebfcabe1b3e2ec7225fb2ee9dfd9f62fba68f0e9bc",
+        "bytes": 32070,
+        "lines": 63
+      }
+    },
+    "fitcheck_bare": {
+      "text_hits": 0,
+      "pid_hits": 0,
+      "combo_hits": 0,
+      "n_eval_items": 79,
+      "source": {
+        "path": "_fitcheck\\v01_val.jsonl",
+        "sha16": "cb1fc9e0a91f7d27",
+        "sha256": "cb1fc9e0a91f7d27e5a03144abe5ef44c9fdffb432aefcd001dc1d6dfc152205",
+        "bytes": 53644,
+        "lines": 79
+      }
+    },
+    "val168": {
+      "text_hits": 0,
+      "pid_hits": 0,
+      "combo_hits": 0,
+      "n_eval_items": 168,
+      "source": {
+        "path": "v01_val.jsonl",
+        "sha16": "c3f39d4fa282999c",
+        "sha256": "c3f39d4fa282999c9a3eea8f4113091d378a630fd5c80c8c13b47ee859268e30",
+        "bytes": 135208,
+        "lines": 168
+      }
+    }
+  },
+  "all_zero": true
+}

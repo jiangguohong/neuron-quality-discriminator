@@ -1,0 +1,423 @@
+{
+ "hard_stops": {
+  "H1_eval_hit": {
+   "pass": true,
+   "eval_hit_set": [
+    "LP-WD-001",
+    "LP-WD-002",
+    "LP-WD-005",
+    "LP-WD-008",
+    "LP-WD-009",
+    "LP-WD-026",
+    "LP-WD-029"
+   ],
+   "selected": 14,
+   "note": "R84-cc §1 双硬拦停之一"
+  },
+  "H2_head": {
+   "head_before": 151,
+   "pass": true,
+   "sources": {
+    "base_v16": "v16/v01_train.jsonl（137 条标签行）",
+    "lpwd": "C:\\Users\\<USER>\\WorkBuddy\\2026-10-10-06-58-10\\neuron_quality\\extra_pairs\\local_pool_batch1_labeled.jsonl（14 条 keep 全标签行）"
+   },
+   "head_loose": 118,
+   "head_final_strict": 116,
+   "head_half_rows": 2,
+   "head_half_detail": [
+    {"pid": "HYA-REJ-001", "type": "cluster_summary", "reason": "簇摘要格式天然无「来源记忆」字段"},
+    {"pid": "HYA-REJ-008", "type": "cluster_summary", "reason": "簇摘要格式天然无「来源记忆」字段"}
+   ],
+   "head_ruling_note": "LH R91 §2 口径勘误（2026-10-21）：唯一判据 = 严格六字段 head_final_strict=116；head_loose=118 为宽松口径实测值，与派生式 151-33 数值相等属巧合，禁再把 151-33 当 head 登记值或推导链；head_half_rows=2 为半头行明细（HYA-REJ-001/008，cluster_summary）。登记一律带口径标签，禁裸数字。"
+  },
+  "H3_combo_semantic": {
+   "pass": true,
+   "removed_rows": 33,
+   "note": "L5：xy_of(A×B) 匹配评测含标签项且 pid 不同的行逐条剔出"
+  }
+ },
+ "counts": {
+  "total": 558,
+  "keep": 250,
+  "reject": 308,
+  "reject_share": 0.552,
+  "head_before": 151,
+  "head_loose": 118,
+  "head_final_strict": 116,
+  "head_half_rows": 2,
+  "head_ruling_note": "LH R91 §2：唯一判据 = head_final_strict=116；head_loose=118 为宽松口径实测；151-33 派生式禁作登记值（与 118 数值相等属巧合）；head_half_rows=2 = HYA-REJ-001/008（cluster_summary）。一律带口径标签。",
+  "combo_removed": 33,
+  "lpwd_merged": 13,
+  "class_weight_main_arm": 1.0,
+  "class_weight_diag_arm_auto": 1.355,
+  "note": "L4 主臂显式1.0唯一计分；诊断臂auto1.355并行仅隔离权重效应（首轮禁写auto为对外数）"
+ },
+ "final_zero_intersection": {
+  "text_pid": {
+   "hits": {},
+   "pass": true
+  },
+  "combo_semantic": {
+   "hits": 0,
+   "pass": true
+  }
+ },
+ "combo_level_removal": [],
+ "input_lock": {
+  "file": "D:\\<SHARED>\\lpwd_labeled_for_dsh\\local_pool_batch1_labeled.jsonl",
+  "sha256_raw": "2dd28bd2c631d07f6c1891d1bfe1a5cc862ea64b41e9604925e6e7890d3595fb",
+  "sha256_16": "2dd28bd2c631d07f",
+  "bytes": 346750,
+  "lines": 160,
+  "eol": "CRLF",
+  "mtime": "2026-10-20 20:36:17",
+  "note": "LH R87 §3 放行令凭据；与本地 extra_pairs 副本同 sha（raw bytes 全等）"
+ },
+ "sha_settlement": {
+  "wd_measured_shared": "2dd28bd2c631d07f",
+  "wd_local_extra_pairs": "2dd28bd2c631d07f",
+  "dsh_reported": "51020a49a0176bd9",
+  "verdict": "DSH 报数与 WD 两侧实测不一致 → 按 LH R87 §4.2 请 DSH 复算对账；共享区文件 mtime=20:36:17 为 WD 20:36 逐行态修复版，DSH 51020a49 疑为修前版本或其导出副本口径，以 mtime+raw bytes 定责",
+  "mtime_shared": "2026-10-20 20:36:17"
+ },
+ "assembly_list": {
+  "total_after_combo_removal": 558,
+  "keep_reject": {
+   "keep": 250,
+   "reject": 308
+  },
+  "eval_hit_removed_7": [
+   "LP-WD-001",
+   "LP-WD-002",
+   "LP-WD-005",
+   "LP-WD-008",
+   "LP-WD-009",
+   "LP-WD-026",
+   "LP-WD-029"
+  ],
+  "assembly_domain_note": "LH R87 §0 口径：装配域 = v16 577 + LP-WD 14（含076）→ 591；eval_hit 7 条本就不在 591 内（LP-WD 输入已取 14 条干净 keep），591→558 的 33 全部来自组合级剔出，不是 7+33",
+  "combo_removed_33": [
+   {
+    "pid": "DSH-REJ3-037",
+    "combo_key": "\"self-improvement\"×成长复刻",
+    "matched_eval": [
+     "DSH-REJ3-034",
+     "DSH-B4-023",
+     "DSH-REJ3-034"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-REJ3-034', 'DSH-B4-023', 'DSH-REJ3-034']：同 A×B 标签(\"self-improvement\"×成长复刻)不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B4-009",
+    "combo_key": "\"system-design\"×[\"workflow\"",
+    "matched_eval": [
+     "DSH-B6-024",
+     "DSH-B4-008"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-B6-024', 'DSH-B4-008']：同 A×B 标签(\"system-design\"×[\"workflow\")不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B4-036",
+    "combo_key": "互动回声×共生",
+    "matched_eval": [
+     "DSH-B4-032"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-B4-032']：同 A×B 标签(互动回声×共生)不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B4-002",
+    "combo_key": "\"automation\"×[\"memory-system\"",
+    "matched_eval": [
+     "DSH-REJ3-016"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-REJ3-016']：同 A×B 标签(\"automation\"×[\"memory-system\")不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B4-001",
+    "combo_key": "\"automation\"×[\"memory-system\"",
+    "matched_eval": [
+     "DSH-REJ3-016"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-REJ3-016']：同 A×B 标签(\"automation\"×[\"memory-system\")不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B6-028",
+    "combo_key": "\"preference\"]×\"workflow\"",
+    "matched_eval": [
+     "DSH-B6-029",
+     "DSH-B4-017"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-B6-029', 'DSH-B4-017']：同 A×B 标签(\"preference\"]×\"workflow\")不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-REJ3-015",
+    "combo_key": "\"automation\"×[\"memory-system\"",
+    "matched_eval": [
+     "DSH-REJ3-016"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-REJ3-016']：同 A×B 标签(\"automation\"×[\"memory-system\")不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B6-032",
+    "combo_key": "[\"system-reliability\"×鸿羽",
+    "matched_eval": [
+     "DSH-REJ3-031",
+     "DSH-B6-033"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-REJ3-031', 'DSH-B6-033']：同 A×B 标签([\"system-reliability\"×鸿羽)不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B4-029",
+    "combo_key": "互动回声×共生",
+    "matched_eval": [
+     "DSH-B4-032"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-B4-032']：同 A×B 标签(互动回声×共生)不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B4-040",
+    "combo_key": "\"system-design\"]×成长复刻",
+    "matched_eval": [
+     "DSH-B4-030"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-B4-030']：同 A×B 标签(\"system-design\"]×成长复刻)不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B4-039",
+    "combo_key": "互动回声×共生",
+    "matched_eval": [
+     "DSH-B4-032"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-B4-032']：同 A×B 标签(互动回声×共生)不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B6-015",
+    "combo_key": "\"automation\"×[\"memory-system\"",
+    "matched_eval": [
+     "DSH-REJ3-016"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-REJ3-016']：同 A×B 标签(\"automation\"×[\"memory-system\")不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B4-015",
+    "combo_key": "\"preference\"]×\"workflow\"",
+    "matched_eval": [
+     "DSH-B6-029",
+     "DSH-B4-017"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-B6-029', 'DSH-B4-017']：同 A×B 标签(\"preference\"]×\"workflow\")不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-REJ3-014",
+    "combo_key": "\"automation\"×[\"memory-system\"",
+    "matched_eval": [
+     "DSH-REJ3-016"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-REJ3-016']：同 A×B 标签(\"automation\"×[\"memory-system\")不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-REJ3-032",
+    "combo_key": "[\"system-reliability\"×鸿羽",
+    "matched_eval": [
+     "DSH-REJ3-031",
+     "DSH-B6-033"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-REJ3-031', 'DSH-B6-033']：同 A×B 标签([\"system-reliability\"×鸿羽)不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-REJ3-035",
+    "combo_key": "\"self-improvement\"×成长复刻",
+    "matched_eval": [
+     "DSH-REJ3-034",
+     "DSH-B4-023",
+     "DSH-REJ3-034"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-REJ3-034', 'DSH-B4-023', 'DSH-REJ3-034']：同 A×B 标签(\"self-improvement\"×成长复刻)不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B4-012",
+    "combo_key": "[\"system-reliability\"×成长复刻",
+    "matched_eval": [
+     "DSH-REJ3-027",
+     "DSH-REJ3-026"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-REJ3-027', 'DSH-REJ3-026']：同 A×B 标签([\"system-reliability\"×成长复刻)不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B4-022",
+    "combo_key": "\"self-improvement\"×成长复刻",
+    "matched_eval": [
+     "DSH-REJ3-034",
+     "DSH-B4-023",
+     "DSH-REJ3-034"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-REJ3-034', 'DSH-B4-023', 'DSH-REJ3-034']：同 A×B 标签(\"self-improvement\"×成长复刻)不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B4-033",
+    "combo_key": "互动回声×共生",
+    "matched_eval": [
+     "DSH-B4-032"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-B4-032']：同 A×B 标签(互动回声×共生)不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-REJ3-025",
+    "combo_key": "[\"system-reliability\"×成长复刻",
+    "matched_eval": [
+     "DSH-REJ3-027",
+     "DSH-REJ3-026"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-REJ3-027', 'DSH-REJ3-026']：同 A×B 标签([\"system-reliability\"×成长复刻)不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-REJ3-028",
+    "combo_key": "\"preference\"]×\"workflow\"",
+    "matched_eval": [
+     "DSH-B6-029",
+     "DSH-B4-017"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-B6-029', 'DSH-B4-017']：同 A×B 标签(\"preference\"]×\"workflow\")不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B6-022",
+    "combo_key": "\"system-design\"×[\"workflow\"",
+    "matched_eval": [
+     "DSH-B6-024",
+     "DSH-B4-008"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-B6-024', 'DSH-B4-008']：同 A×B 标签(\"system-design\"×[\"workflow\")不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B4-010",
+    "combo_key": "\"system-design\"×[\"workflow\"",
+    "matched_eval": [
+     "DSH-B6-024",
+     "DSH-B4-008"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-B6-024', 'DSH-B4-008']：同 A×B 标签(\"system-design\"×[\"workflow\")不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B4-037",
+    "combo_key": "\"system-design\"]×成长复刻",
+    "matched_eval": [
+     "DSH-B4-030"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-B4-030']：同 A×B 标签(\"system-design\"]×成长复刻)不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-REJ3-023",
+    "combo_key": "\"system-design\"×[\"workflow\"",
+    "matched_eval": [
+     "DSH-B6-024",
+     "DSH-B4-008"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-B6-024', 'DSH-B4-008']：同 A×B 标签(\"system-design\"×[\"workflow\")不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B6-025",
+    "combo_key": "[\"system-reliability\"×成长复刻",
+    "matched_eval": [
+     "DSH-REJ3-027",
+     "DSH-REJ3-026"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-REJ3-027', 'DSH-REJ3-026']：同 A×B 标签([\"system-reliability\"×成长复刻)不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B6-014",
+    "combo_key": "\"automation\"×[\"memory-system\"",
+    "matched_eval": [
+     "DSH-REJ3-016"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-REJ3-016']：同 A×B 标签(\"automation\"×[\"memory-system\")不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B4-019",
+    "combo_key": "[\"system-reliability\"×鸿羽",
+    "matched_eval": [
+     "DSH-REJ3-031",
+     "DSH-B6-033"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-REJ3-031', 'DSH-B6-033']：同 A×B 标签([\"system-reliability\"×鸿羽)不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B6-023",
+    "combo_key": "\"system-design\"×[\"workflow\"",
+    "matched_eval": [
+     "DSH-B6-024",
+     "DSH-B4-008"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-B6-024', 'DSH-B4-008']：同 A×B 标签(\"system-design\"×[\"workflow\")不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B4-024",
+    "combo_key": "\"self-improvement\"×成长复刻",
+    "matched_eval": [
+     "DSH-REJ3-034",
+     "DSH-B4-023",
+     "DSH-REJ3-034"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-REJ3-034', 'DSH-B4-023', 'DSH-REJ3-034']：同 A×B 标签(\"self-improvement\"×成长复刻)不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-B4-034",
+    "combo_key": "\"system-design\"]×成长复刻",
+    "matched_eval": [
+     "DSH-B4-030"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-B4-030']：同 A×B 标签(\"system-design\"]×成长复刻)不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "DSH-REJ3-022",
+    "combo_key": "\"system-design\"×[\"workflow\"",
+    "matched_eval": [
+     "DSH-B6-024",
+     "DSH-B4-008"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['DSH-B6-024', 'DSH-B4-008']：同 A×B 标签(\"system-design\"×[\"workflow\")不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   },
+   {
+    "pid": "LP-WD-076",
+    "combo_key": "跨实例对齐×飞影体系",
+    "matched_eval": [
+     "HYA-105-103",
+     "HYA-105-103"
+    ],
+    "gold_consistent": true,
+    "reason": "组合语义命中评测项 ['HYA-105-103', 'HYA-105-103']：同 A×B 标签(跨实例对齐×飞影体系)不同 pid，构成语义弱泄漏；gold 一致=True（L5 加严剔出）"
+   }
+  ]
+ }
+}

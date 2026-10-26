@@ -1,0 +1,516 @@
+{
+  "version": "v0.1",
+  "model": "base+LoRA(adapters_v04)",
+  "n_val": 63,
+  "n_correct": 52,
+  "accuracy": 0.8254,
+  "parse_fail": 0,
+  "note": "v0.1 管道验证：不设准确率门槛；小样本（10对量级）下准确率不具统计意义",
+  "wall_time_s": 200.6,
+  "rows": [
+    {
+      "pair_id": "HYA-105-075",
+      "text": "【神经元繁殖 batch_55 · 2026-10-13 06:45】\n\n类型: combination\n代数: 第2代\n标签: W1, X基线, W1×X基线\n\n摘要: 组合神经元: W1 与 X基线 共现 5 次\n\n来源记忆: dsh|d91f7e61-1003-4e25-9c7c-e3cdf188d06e, dsh|501f58eb-190a-41f6-b63a-a5cb9d533598, dsh|5e145d55-2b41-4f8e-b7d4-f93293449e5b, dsh|1294215c-15d7-4ff2-80f7-1865534eda30, 357ccd9e-5458-473b-82dd-41e9b6b674f5",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "DSH-REJ-044",
+      "text": "# D1 智库五步构建记录（wd 本机落地）  构建时间：2026-10-15 落点：D:\\<SHARED>\\D1_zhiku\\（D: 共享盘；注：G410 侧 SMB 当前不可用，旧机独立可",
+      "gold": "reject",
+      "pred": "keep",
+      "correct": false,
+      "raw": "判定：keep reason：高信息密度+独立可执行+可检索价值"
+    },
+    {
+      "pair_id": "HYA-105-026",
+      "text": "【神经元繁殖 batch_104 · 2026-10-13 06:45】\n\n类型: combination\n代数: 第2代\n标签: LH裁定, 飞影体系, LH裁定×飞影体系\n\n摘要: 组合神经元: LH裁定 与 飞影体系 共现 4 次\n\n来源记忆: be75e650-e205-4ac1-9ad9-4f9952d43668, f93452d1-90ca-4174-adfc-ead1aa518ee2, c01ce9b1-e0b3-46c4-afa9-b0b145d9ef0d, a5f314ca-cf5b-4fef-97a6-7f13e84c8ba0",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "LHA-53-039",
+      "text": "长URL直跳触发风控——WD飞影18:10强调拟人操作，human_ops.py guard_url()拦截，禁1禁用全路径直跳",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：高信息密度+独立可执行+可检索价值"
+    },
+    {
+      "pair_id": "DSH-REJ3-016",
+      "text": "【神经元繁殖 batch_106 · 2026-10-12 09:52】\n\n类型: combination\n代数: 第2代\n标签:  \"automation\", [\"memory-system\",  \"automation\"×[\"memory-system\"\n\n摘要: 组合神经元:  \"automation\" 与 [\"memory-system\" 共现 6 次\n\n来源记忆: f447fea2-a7fb-434a-a383-c8336bee9c42, ff18a91d-7791-4360-a3ea-9add710135c8, 7d0dae99-3009-40e3-8a96-418766fe5294, 67e52876-f977-4d1c-ac41-06c2c234ef44, b438e275-4769-478d-bfad-c02d8bd33acd",
+      "gold": "reject",
+      "pred": "reject",
+      "correct": true,
+      "raw": "判定：reject reason：空壳拼接：繁殖模板化产物，标签共现抽象无实质语义"
+    },
+    {
+      "pair_id": "DSH-REJ3-018",
+      "text": "【神经元繁殖 batch_43 · 2026-10-10 21:12】\n\n类型: combination\n代数: 第2代\n标签: handoff:Claw, session-handoff, handoff:Claw×session-handoff\n\n摘要: 组合神经元: handoff:Claw 与 session-handoff 共现 11 次\n\n来源记忆: e86923a1-b104-4600-b1ea-70f97213a14a, c97dda35-3aee-4ae5-9c1d-0c82f6f20d06, db4d9141-0829-4c54-a71b-8ee384d1a776, 7264b08d-7316-4d14-9d9a-d903e5cd1ab1, fbd7e6c0-67c2-4bc2-a8a6-fc4c4bb37289",
+      "gold": "reject",
+      "pred": "keep",
+      "correct": false,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "HYA-105-025",
+      "text": "【神经元繁殖 batch_105 · 2026-10-13 06:45】\n\n类型: combination\n代数: 第2代\n标签: event-store, 飞影体系, event-store×飞影体系\n\n摘要: 组合神经元: event-store 与 飞影体系 共现 4 次\n\n来源记忆: ce6f4fd5-5827-49f6-86a1-982a6fccf5d3, f93452d1-90ca-4174-adfc-ead1aa518ee2, a5f314ca-cf5b-4fef-97a6-7f13e84c8ba0, bc2872f2-289f-4fce-b83c-af818fd84456",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "DSH-REJ-032",
+      "text": "用户：鸿羽 助手：（3轮处理后未生成回复）",
+      "gold": "reject",
+      "pred": "reject",
+      "correct": true,
+      "raw": "判定：reject reason：碎片截断：对话留痕无信息价值(纯招呼/ping)"
+    },
+    {
+      "pair_id": "DSH-KEEP3-054",
+      "text": "source 标识铁律：memory_add 必须带 HETU_AGENT_SOURCE=dsh飞影（cordis.patch.yml mcp-hetu env 注入），否则落库 source=飞影 与 WD 侧混淆；DSH 近期写入曾全落'飞影'（10-12 实测5条），根因=MCP 配置未注入 env，已修复待重启生效。",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：高信息密度+独立可执行+可检索价值"
+    },
+    {
+      "pair_id": "HYA-105-067",
+      "text": "【神经元繁殖 batch_63 · 2026-10-13 06:45】\n\n类型: combination\n代数: 第2代\n标签: archive, from_wd, archive×from_wd\n\n摘要: 组合神经元: archive 与 from_wd 共现 5 次\n\n来源记忆: 26fb7c79-44e4-4556-89ee-610fa7198b64, 92500b50-3505-4ffc-a405-8a05b0a765c4, 06f5fe70-db06-442b-9001-0fe985948e71, 8d40be96-9163-42fe-887e-df69a793cd5d, 2faab5b3-8aa4-4e49-abe8-8ace0f8b7749",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "NP-R45I1-004",
+      "text": "河图×飞影体系",
+      "gold": "keep",
+      "pred": "reject",
+      "correct": false,
+      "raw": "判定：reject reason：碎片截断/泛化空话：超短内容无语义完整性"
+    },
+    {
+      "pair_id": "DSH-REJ3-031",
+      "text": "【神经元繁殖 batch_108 · 2026-10-10 21:04】\n\n类型: combination\n代数: 第2代\n标签: [\"system-reliability\", 鸿羽, [\"system-reliability\"×鸿羽\n\n摘要: 组合神经元: [\"system-reliability\" 与 鸿羽 共现 6 次\n\n来源记忆: 7754f19f-00c7-4cbc-9b0b-2f04b8452a3c, ec131d9d-dfdb-4d58-ad2f-d6e4158c466c, e18431c0-b304-42fc-b907-f87ade7d3529, 35b1866c-47ab-44b9-875d-93c8fc45d3dc, edf4fa16-7ea1-4d87-9024-df1809ccab91",
+      "gold": "reject",
+      "pred": "reject",
+      "correct": true,
+      "raw": "判定：reject reason：空壳拼接：繁殖模板化产物，标签共现抽象无实质语义"
+    },
+    {
+      "pair_id": "HYA-105-087",
+      "text": "【神经元繁殖 batch_43 · 2026-10-13 06:45】\n\n类型: combination\n代数: 第2代\n标签: DSH, 会话交接, DSH×会话交接\n\n摘要: 组合神经元: DSH 与 会话交接 共现 5 次\n\n来源记忆: dsh|4ed499c2-fb59-4d75-8c7a-888b5740cc03, ba0244dc-06be-4084-a467-ab632b8dbd84, 4fbb7581-ef1f-4099-bac3-a1ac1d1031cc, aef1690f-3cf9-477e-9379-48292ef5d76c, 8af16132-240a-43ee-9004-2f57060134b2",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "DSH-REJ-020",
+      "text": "用户： 助手：  在的。等你。",
+      "gold": "reject",
+      "pred": "reject",
+      "correct": true,
+      "raw": "判定：reject reason：碎片截断：对话留痕无信息价值(纯招呼/ping)"
+    },
+    {
+      "pair_id": "DSH-REJ-001",
+      "text": "时间基准校验",
+      "gold": "reject",
+      "pred": "reject",
+      "correct": true,
+      "raw": "判定：reject reason：信息密度不足：纯标题无实质内容"
+    },
+    {
+      "pair_id": "HYA-105-094",
+      "text": "【神经元繁殖 batch_36 · 2026-10-13 06:45】\n\n类型: combination\n代数: 第2代\n标签: evt_20260923_003, 飞影体系, evt_20260923_003×飞影体系\n\n摘要: 组合神经元: evt_20260923_003 与 飞影体系 共现 6 次\n\n来源记忆: 523a68d9-c5d5-4c52-b287-e56f7d2b2999, 56e1ca40-31d5-4cd2-9000-7ffd4626957b, b25f1ff3-16df-4800-8489-b5521d9f2c32, ff0cea83-0aaf-43c3-9f0e-05ee0eeaff4d, ce6f4fd5-5827-49f6-86a1-982a6fccf5d3",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "DSH-REJ-019",
+      "text": "用户：ping 助手：  在。",
+      "gold": "reject",
+      "pred": "reject",
+      "correct": true,
+      "raw": "判定：reject reason：碎片截断：对话留痕无信息价值(纯招呼/ping)"
+    },
+    {
+      "pair_id": "DSH-KEEP3-058",
+      "text": "wake 插件收信主通道=本地 signal_queue(to=dsh,consumed=0) 30s 轮询；总线来信需独立 poll（v2.4.11 适配中）；ACK_AUTO 在 appendInbox 后按信号类型分流：纯回执静默、实质内容升级；poll 原子消费不可重取（#999115 500字截断教训）。",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：高信息密度+独立可执行+可检索价值"
+    },
+    {
+      "pair_id": "DSH-REJ-040",
+      "text": "用户： 助手：  我在。准备接收下一条指令。",
+      "gold": "reject",
+      "pred": "reject",
+      "correct": true,
+      "raw": "判定：reject reason：碎片截断：对话留痕无信息价值(纯招呼/ping)"
+    },
+    {
+      "pair_id": "HYA-REJ-014",
+      "text": "判别器v0.1标注数据 - Part8/8 (11行, 5338字节)\n\n{\"text\": \"【神经元繁殖 batch_35 · 2026-10-13 06:45】\\n\\n类型: combination\\n代数: 第2代\\n标签: archive, signal, archive×signal\\n\\n摘要: 组合神经元: archive 与 signal 共现 6 次\\n\\n来源记忆: 26fb7",
+      "gold": "reject",
+      "pred": "keep",
+      "correct": false,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "HYA-105-102",
+      "text": "【神经元繁殖 batch_28 · 2026-10-13 06:45】\n\n类型: combination\n代数: 第2代\n标签: DSH, WD, DSH×WD\n\n摘要: 组合神经元: DSH 与 WD 共现 7 次\n\n来源记忆: dsh|ca584734-5236-4621-8832-588e7c3ba0ad, dsh|0dfd42da-5381-41b1-a222-ba1784d63cf9, dsh|ca323a97-5a74-4e5b-b6ec-b85e59d7c25c, dsh|e7120e38-6aa3-4b07-8c11-a75b04e74272, c654e660-4161-48d6-b2b3-1cd2752a5cbd",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "DSH-REJ-018",
+      "text": "用户： 助手：  我在这里。",
+      "gold": "reject",
+      "pred": "reject",
+      "correct": true,
+      "raw": "判定：reject reason：碎片截断：对话留痕无信息价值(纯招呼/ping)"
+    },
+    {
+      "pair_id": "DSH-KEEP-005",
+      "text": "跨方分歧裁决先排时间戳链：共享库读写矛盾时先把双方操作时刻排序，时间差常即答案",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：具体方法论（跨方分歧先排时间戳链）"
+    },
+    {
+      "pair_id": "LHA-53-009",
+      "text": "诊断三假设强制检查机制：每次诊断前必跑6个假设+反证检查",
+      "gold": "keep",
+      "pred": "reject",
+      "correct": false,
+      "raw": "判定：reject reason：准入违例：超长摘要（诊断三假设强制检查机制摘要无反证"
+    },
+    {
+      "pair_id": "LHA-53-033",
+      "text": "任务生命周期FSM——情报#267 multica：显式claim+转移广播+主动阻塞上报是Agent一等责任",
+      "gold": "reject",
+      "pred": "keep",
+      "correct": false,
+      "raw": "判定：keep reason：高信息密度+独立可执行+可检索价值"
+    },
+    {
+      "pair_id": "HYA-105-099",
+      "text": "【神经元繁殖 batch_31 · 2026-10-13 06:45】\n\n类型: combination\n代数: 第2代\n标签: 会话交接, 飞影体系, 会话交接×飞影体系\n\n摘要: 组合神经元: 会话交接 与 飞影体系 共现 7 次\n\n来源记忆: dsh|aab33bac-1c5f-4dff-b4e6-58fe420c8e36, dsh|88227dd9-2501-401a-b3e3-3cc27479b568, 10c51747-95a9-4339-9a38-98094300d2f0, 5c17bfd3-4436-452f-a29c-af9f31e2e46e, 123b697f-0d37-49d3-b55e-352cc6ab2a0e",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "HYA-105-070",
+      "text": "【神经元繁殖 batch_60 · 2026-10-13 06:45】\n\n类型: combination\n代数: 第2代\n标签: WD通信, gate_schema, WD通信×gate_schema\n\n摘要: 组合神经元: WD通信 与 gate_schema 共现 5 次\n\n来源记忆: a69ddb14-5a43-49a5-805d-b99d2673d4d8, be75e650-e205-4ac1-9ad9-4f9952d43668, e7ecc7f4-b17a-47e6-a831-758dd47cca4c, 523a68d9-c5d5-4c52-b287-e56f7d2b2999, b25f1ff3-16df-4800-8489-b5521d9f2c32",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "DSH-KEEP3-074",
+      "text": "【MBM-0发布全序列落地登记】T0-T2全完成（2026-09-09）：知乎 https://zhuanlan.zhihu.com/p/2080801207405301901 + 掘金 https://juejin.cn/post/7683102406072614912 + Zenodo DOI 10.5281/zenodo.22671447 + GitHub https://github.com/jiangguohong/DFYS 。四平台互引清单已推WD。剩余：T4 Show HN（老板本机操作，材料包=repo+DOI+两中文链接+案例#001数据点MBR=1/BIR=33%）+ 09-15 v0.1补丁（观察窗结束，三平台+GitHub Measurement Report Issue同步，草案已备 outbox\\MBM-0_v0.1补丁_草案.md）。登记表：outbox\\MBM-0_发布链接登记.md 全勾。",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：高信息密度+独立可执行+可检索价值"
+    },
+    {
+      "pair_id": "LHA-53-017",
+      "text": "读代码/脚本的文件头 docstring 或注释时，必须先判定它是「历史诊断记录」还是「当前状态描述」。判别依据：docstring 若含修复/根因/已/解决等时态词且提到具体体积或日期，它描述的是写下时的状态快照；判断当前状态必须回到实物（文件 mtime/体积增量/最新一次写入内容）而非注释。反面案例：凭 09-07 的「修复2.1GB膨胀」注释推断 09-23 仍有泄漏，实际是逐月正常累积、当天只入图1条cube。",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：高信息密度+独立可执行+可检索价值"
+    },
+    {
+      "pair_id": "HYA-105-048",
+      "text": "【神经元繁殖 batch_82 · 2026-10-13 06:45】\n\n类型: combination\n代数: 第2代\n标签: 2026-09-05, L6, 2026-09-05×L6\n\n摘要: 组合神经元: 2026-09-05 与 L6 共现 4 次\n\n来源记忆: dsh|f3e252e8-b512-439b-8767-65d2ef0c5d52, dsh|1c99e354-8354-409f-95c8-3f07c8df8dc6, dsh|3d8e69c9-1b80-48fd-8ae0-06ea4dc1386e, dsh|c3ba5ad7-9934-48b0-af77-c7452892d5c9",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "NP-R45I1-006",
+      "text": "手术生长×神经元",
+      "gold": "keep",
+      "pred": "reject",
+      "correct": false,
+      "raw": "判定：reject reason：碎片截断/泛化空话：超短内容无语义完整性"
+    },
+    {
+      "pair_id": "DSH-REJ-023",
+      "text": "用户：在吗 助手：  在。随时待命。",
+      "gold": "reject",
+      "pred": "reject",
+      "correct": true,
+      "raw": "判定：reject reason：碎片截断：对话留痕无信息价值(纯招呼/ping)"
+    },
+    {
+      "pair_id": "LHA-53-001",
+      "text": "时间基准校验",
+      "gold": "reject",
+      "pred": "reject",
+      "correct": true,
+      "raw": "判定：reject reason：信息密度不足：纯标题无实质内容"
+    },
+    {
+      "pair_id": "HYA-105-020",
+      "text": "【神经元繁殖 batch_102 · 2026-10-13 21:00】\n\n类型: cluster_summary\n代数: 第2代\n标签: 诊断, cluster:诊断\n\n摘要: 簇摘要: [诊断] 7条记忆 | [信号通信诊断 · 2026-09-06] WD问\"信已回，你侧有问题了？\"。诊断：1)我的REPL | 鸿羽深度自我诊断（78/100） | WD河图记忆体系整合诊断补充报告：新发现6漏洞(V-A~V-F)+逆推7道加固护栏+WD已执行可恢复\n\n来源记忆: dsh|619fe608-9d11-4b5d-b5d9-335b9b5c33fb, d7f157fd-9276-46d8-ba79-0f9db104709f, wd|7cfdb417-b05d-46e3-8ab8-227bdb7327a0, 45bf751e-1acc-4cd9-b948-abc1b589ef6c, 0e3d73cb-14c8-46e6-a818-3d20e803970c",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "HYA-105-013",
+      "text": "【神经元繁殖 batch_109 · 2026-10-13 21:00】\n\n类型: cluster_summary\n代数: 第2代\n标签: 治理, cluster:治理\n\n摘要: 簇摘要: [治理] 7条记忆 | 【三方通信状态·WD 停答形成的死锁 · 2026-09-23 23:25】\n\n一、实测事实（sig | 【老板飞龙最终确认清单 · 挂账8项落地授权 · 2026-09-24 00:1x】\n\n来源：WD  | 【2026-10-01 计划任务治理结论】WD侧P0双条已实测处置完毕：\n1. HetuCloudB\n\n来源记忆: a5f5075b-ca83-4448-95fc-d9d48ef58cf7, dfed5f8d-45dd-4e00-9ca9-d4a4830cc3b5, ba98bde4-8260-4269-92f6-dd87c921f4ef, 54c6c3cd-086c-4d30-b122-a501c6de93f2, wd|3e19ba74",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "HYA-105-011",
+      "text": "【神经元繁殖 batch_111 · 2026-10-13 21:00】\n\n类型: cluster_summary\n代数: 第2代\n标签: conv阻断, cluster:conv阻断\n\n摘要: 簇摘要: [conv阻断] 7条记忆 | 【8000 网关恢复 + LH #1000963 六项裁定 DSH 接手 · 2026-09-25  | 【逐项推进汇总 · 2026-09-25 09:4x】\n\n老板\"逐项推\"，4 项待办全部推进：\n\n1 | 【WD #1000969 实质回执 · #2 源头阻断已完成 · 2026-09-25】\n\nWD #\n\n来源记忆: ee7898b5-f98c-4648-b8c7-deea3831c261, 7bcbb2ac-acbf-42ae-9385-7f5b379821aa, c389b8d4-3516-47a7-8983-1898121e2c7c, a5f314ca-cf5b-4fef-97a6-7f13e84c8ba0, 64e2f5c2-3397-4b25-9b82-3b3a0e1a8bb6",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "DSH-REJ-022",
+      "text": "用户： 助手：  在。有什么需要？",
+      "gold": "reject",
+      "pred": "reject",
+      "correct": true,
+      "raw": "判定：reject reason：碎片截断：对话留痕无信息价值(纯招呼/ping)"
+    },
+    {
+      "pair_id": "LHA-53-049",
+      "text": "影子模式验证:任务提炼时若按containment检索会命中催办类模式",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：高信息密度+独立可执行+可检索价值"
+    },
+    {
+      "pair_id": "DSH-KEEP3-059",
+      "text": "神经引擎四内助：筛选/质检/提炼/闭环 权重矩阵（Hebbian 生长，协作率98-100% active）；任务完成前必须 officers 激活四内助；被纠正时 error 记录闭环；发现规律 pattern 提炼；任务结束前 growth 记录生长——四条是任务完成必要条件。",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：高信息密度+独立可执行+可检索价值"
+    },
+    {
+      "pair_id": "HYA-105-062",
+      "text": "【神经元繁殖 batch_68 · 2026-10-13 06:45】\n\n类型: combination\n代数: 第2代\n标签: 0924_0837, signal_archive, 0924_0837×signal_archive\n\n摘要: 组合神经元: 0924_0837 与 signal_archive 共现 5 次\n\n来源记忆: e37e56c0-d5c3-4337-a4c6-7fa508b45f67, a4939326-f8a3-41c5-a6f3-1701b39dbd1f, 72232d60-937b-4be9-ad37-c784ddce8552, e3ad3880-29e2-4229-a8a4-700f2a827bcf, d7d398be-00ab-4b02-b14b-00ed6840e6d0",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "LHA-53-015",
+      "text": "静默死信特征：consumed=0 且无 ACK 且发送无报错，三者同时出现即判定死信",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：高信息密度+独立可执行+可检索价值"
+    },
+    {
+      "pair_id": "DSH-REJ3-004",
+      "text": "组合神经元（gen2·R45_v1）：entity × video\n共现于 35 条记忆，抽象：两者在高频共现语境下关联紧密。\nsample_source_cubes: ['dshvm_91162a9438b66509', 'dshvm_6555e88b322cb005', 'dshvm_f07b3b4f8c8344a4', 'dshvm_38033df8e32c0cb2', 'dshvm_c050c1b8b24f640e', 'dshvm_0c0bab8fb824b4b4', 'dshvm_104353ee54c75175', 'dshvm_c0efe096f1a1bcbc']",
+      "gold": "reject",
+      "pred": "reject",
+      "correct": true,
+      "raw": "判定：reject reason：空壳拼接：标签共现模板化抽象，无实质语义内容"
+    },
+    {
+      "pair_id": "HYA-105-103",
+      "text": "【神经元繁殖 batch_27 · 2026-10-13 06:45】\n\n类型: combination\n代数: 第2代\n标签: 跨实例对齐, 飞影体系, 跨实例对齐×飞影体系\n\n摘要: 组合神经元: 跨实例对齐 与 飞影体系 共现 8 次\n\n来源记忆: dsh|03348673-1902-4b27-a13e-176428099119, dsh|665f3009-9ceb-42f5-8e09-92a2c256862f, dsh|2b88a199-1981-4f55-a40f-2590a7527c61, dsh|f6348679-7084-43ec-9f4a-d6ddd35ecd3f, 2c2be69f-ef64-465c-8ef1-bc2af1a82312",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "DSH-REJ3-027",
+      "text": "【神经元繁殖 batch_107 · 2026-10-12 09:52】\n\n类型: combination\n代数: 第2代\n标签: [\"system-reliability\", 成长复刻, [\"system-reliability\"×成长复刻\n\n摘要: 组合神经元: [\"system-reliability\" 与 成长复刻 共现 6 次\n\n来源记忆: 7754f19f-00c7-4cbc-9b0b-2f04b8452a3c, ec131d9d-dfdb-4d58-ad2f-d6e4158c466c, e18431c0-b304-42fc-b907-f87ade7d3529, 35b1866c-47ab-44b9-875d-93c8fc45d3dc, edf4fa16-7ea1-4d87-9024-df1809ccab91",
+      "gold": "reject",
+      "pred": "reject",
+      "correct": true,
+      "raw": "判定：reject reason：空壳拼接：繁殖模板化产物，标签共现抽象无实质语义"
+    },
+    {
+      "pair_id": "NP-R45I1-003",
+      "text": "互动回声×共生",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：标签组合成立、语义组合成立、指向记忆真实、摘要非空"
+    },
+    {
+      "pair_id": "DSH-KEEP3-064",
+      "text": "勘误令数据真实性上报：每数字附命令原文；未测写未测；人工修改字段列清单；统计时点 UTC+东八双标；库路径全路径；全程只读禁写库（mode=ro）；形态区分（真身=旧机18789四根/残魂=本机河图四官）。",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：高信息密度+独立可执行+可检索价值"
+    },
+    {
+      "pair_id": "HYA-105-016",
+      "text": "【神经元繁殖 batch_106 · 2026-10-13 21:00】\n\n类型: cluster_summary\n代数: 第2代\n标签: line2, cluster:line2\n\n摘要: 簇摘要: [line2] 7条记忆 | # 为什么\"记得更多\"不是智能记忆的终点\n## 一个记忆系统的内核设计笔记\n\n> **边界声明**： | # Line-1 International Edition (EN) — Medium/dev.t | # 从 33% 到四环齐：我给 AI 分身的\"我相信\"装了第一块可审计的仪表\n## 线2 下篇 · \n\n来源记忆: dsh|44aff744-ed8a-4669-b157-148706871028, dsh|5b878e7e-0294-4e2c-8a99-6577071ba223, dsh|616b0d92-62e7-4222-ba14-a1cf8756a2b7, dsh|a6faab39-22a4-495b-a398-431ad24e06cf, dsh|3dd81eb0-e477-4f8f-b279-7917149f33c0",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "DSH-KEEP3-052",
+      "text": "通信走总线：对外五方通信一律 POST <BUS_HOST>（Bearer BUS_TOKEN，token 在 C:\\Users\\<USER>\\.hetu\\bus_token.txt auth_header 行）；poll/ack 归属参数名是 to_agent（不是 agent）；沿用 signal_queue 四字段 from_agent/to_agent/signal/payload；隧道 <TUNNEL_HOST> 已废（401）勿再用。",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：高信息密度+独立可执行+可检索价值"
+    },
+    {
+      "pair_id": "LHA-53-013",
+      "text": "上报假发现前必用完整字段复核一次——本轮 substr 截断差点让我向 WD 上报'DSH/LH 写端也混写'的错误结论",
+      "gold": "keep",
+      "pred": "reject",
+      "correct": false,
+      "raw": "判定：reject reason：准入违例：上报假发现未复核前完整性验证缺位"
+    },
+    {
+      "pair_id": "DSH-KEEP3-066",
+      "text": "判别器 v0.3 数据质量要求：reject 样本必须是真实低质神经元组合（空壳拼接/伪关系/同义反复/泛化空话/残缺组合），完整文本不截断；按语义挑不按长度挑；reject 占比拉回 30-35%（补 keep 30-40 条）；日志类文本不入（模型会学捷径）。",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：高信息密度+独立可执行+可检索价值"
+    },
+    {
+      "pair_id": "DSH-REJ3-034",
+      "text": "【神经元繁殖 batch_64 · 2026-10-10 21:03】\n\n类型: combination\n代数: 第2代\n标签:  \"self-improvement\", 成长复刻,  \"self-improvement\"×成长复刻\n\n摘要: 组合神经元:  \"self-improvement\" 与 成长复刻 共现 8 次\n\n来源记忆: 776e3370-6447-4a43-9577-4bf6fae12a3a, cabb19a2-d701-4504-8248-ca87ea6ab12e, ae66ea32-d987-4f11-820d-3d0b52daf900, 64e7e34a-2268-4063-b5a3-3b669e75203e, 55be93ab-2b37-4fa3-9819-0520946ea8b4",
+      "gold": "reject",
+      "pred": "reject",
+      "correct": true,
+      "raw": "判定：reject reason：空壳拼接：繁殖模板化产物，标签共现抽象无实质语义"
+    },
+    {
+      "pair_id": "DSH-KEEP-007",
+      "text": "层级语义权威表：L0-L7大写短式为权威，l1_raw/l2_fact/l4_identity为检索层别名映射",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：高信息密度+独立可执行+可检索价值"
+    },
+    {
+      "pair_id": "DSH-REJ-036",
+      "text": "用户：我刚才说我叫什么？ 助手：  小明。",
+      "gold": "reject",
+      "pred": "reject",
+      "correct": true,
+      "raw": "判定：reject reason：碎片截断：对话留痕无信息价值(纯招呼/ping)"
+    },
+    {
+      "pair_id": "DSH-REJ-014",
+      "text": "影子模式验证:任务提炼时若按containment检索会命中催办类模式",
+      "gold": "reject",
+      "pred": "keep",
+      "correct": false,
+      "raw": "判定：keep reason：高信息密度+独立可执行+可检索价值"
+    },
+    {
+      "pair_id": "LHA-53-030",
+      "text": "Karpathy编码纪律——情报#271：Think Before Coding/Simplicity First/Surgical Changes/Goal-Driven Execution",
+      "gold": "reject",
+      "pred": "keep",
+      "correct": false,
+      "raw": "判定：keep reason：高信息密度+独立可执行+可检索价值"
+    },
+    {
+      "pair_id": "DSH-KEEP3-075",
+      "text": "评估决策（2026-08-15 飞影决断）：不引入 WD 侧 wd-hetu 与 hetu-memory 两个 skill 到 DSH。理由：①wd-hetu 只是 WD 侧确定性河图操作脚本（spawn stdio 调用 mcp_stdio_async.py），与 DSH 已挂载的原生 hetu MCP（cordis.patch.yml 托管，memory_add/search/get/update/delete/health 全套工具）职责完全重叠，且路径硬编码 WD；②hetu-memory 是裸写 SQLite 方案（SKILL.md 自述不依赖 MCP/HTTP），违反六铁律第4条\"绝不绕过 MCP 裸写 SQLite\"。已吸收其唯一有值知识：河图操作前先读 HETU_MANIFEST.md 确认实例归属，禁止凭记忆推断三实例（WD主库 C:\\Users\\<USER>\\.hetu\\data / 影居 D:\\hetu\\hetu 只读 / WD自身记忆非河图）。",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：高信息密度+独立可执行+可检索价值"
+    },
+    {
+      "pair_id": "DSH-REJ-010",
+      "text": "宁可说无不可编造——WD#999420 撤回编造URL后DSH不再造URL",
+      "gold": "reject",
+      "pred": "reject",
+      "correct": true,
+      "raw": "判定：reject reason：冗余/重复：与b08f7c65同铁律重复"
+    },
+    {
+      "pair_id": "LHA-53-002",
+      "text": "验证方法",
+      "gold": "reject",
+      "pred": "reject",
+      "correct": true,
+      "raw": "判定：reject reason：信息密度不足：纯标题无实质内容"
+    },
+    {
+      "pair_id": "DSH-REJ-037",
+      "text": "用户： 助手：（已记录，等待进一步指令。）",
+      "gold": "reject",
+      "pred": "reject",
+      "correct": true,
+      "raw": "判定：reject reason：碎片截断：对话留痕无信息价值(纯招呼/ping)"
+    },
+    {
+      "pair_id": "HYA-105-071",
+      "text": "【神经元繁殖 batch_59 · 2026-10-13 06:45】\n\n类型: combination\n代数: 第2代\n标签: 防复发, 飞影体系, 防复发×飞影体系\n\n摘要: 组合神经元: 防复发 与 飞影体系 共现 5 次\n\n来源记忆: e03683bf-5f34-4592-9c37-61bfe49bf8bf, 53fe2b4e-45ec-4397-9ea2-db0a9bdbe1a3, a90bb853-fc93-424f-96fb-8614717b9377, 7c4ea33c-193c-4aee-bf08-7f4bc55a54a7, 17208d86-2acf-4389-9cc2-3e472063b403",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "HYA-105-078",
+      "text": "【神经元繁殖 batch_52 · 2026-10-13 06:45】\n\n类型: combination\n代数: 第2代\n标签: MBM-0, 首秀, MBM-0×首秀\n\n摘要: 组合神经元: MBM-0 与 首秀 共现 5 次\n\n来源记忆: c8799fad-aaf3-4c94-ad55-f670b98f0fe1, dsh|e7fe1ddd-b39b-440c-9c2e-f6a971e5dfb7, dsh|5ffff7e5-a7db-415f-9141-93da207b549a, afbf81ac-e8b9-4731-8c2a-2acedd2bc406, dsh|cd2800ba-74a2-40e2-8fb5-361d3f7578ff",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：全满足：信息密度+独立性+可检索+非冗余"
+    },
+    {
+      "pair_id": "DSH-KEEP-004",
+      "text": "幂等消费三件套：append型日志的读-判重-处理须原子，周期tick×无条件append=无限重复",
+      "gold": "keep",
+      "pred": "keep",
+      "correct": true,
+      "raw": "判定：keep reason：高密度机制模式（幂等三件套，tick×无条件append=无限"
+    },
+    {
+      "pair_id": "LHA-53-006",
+      "text": "DSH自进化循环：atomic→verify→keep/reject，持续优化决策质量",
+      "gold": "reject",
+      "pred": "keep",
+      "correct": false,
+      "raw": "判定：keep reason：高信息密度+独立可执行+可检索价值"
+    }
+  ]
+}

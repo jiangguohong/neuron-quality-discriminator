@@ -1,0 +1,16 @@
+# dsh_r91_leak_check.py manifest
+- 脚本: dsh_r91_leak_check.py
+- 来源: DSH 侧独立实现，未复用 WD 侧脚本；用于 v17 训练后三维泄漏零交集复核
+- sha256: e67a4ff50f6652d4736a408353926d191f38eed70d4e84faaebf7b2eeb87aa42
+- 行数: 120
+- 字节数: 5199
+- 版本沿革:
+  - 本版 = val168 分支修复版（load_json → load_jsonl + user_content 提取，修复 JSONL 误按单 JSON 解析缺陷）
+  - 修复前版本备份: dsh_r91_leak_check.py.bak_pre_val168fix（sha256 a100042f64daf0b2…，4972B，117 行）
+  - DSH 10-21 首版交付件（sha256 8865fdc98910c466…，4855B，117 行）经 LH R104 §3 裁定作废，不进仓
+- 依赖: 仅 Python 3.13 标准库（json/os/sys/re/argparse/collections），无第三方依赖、无 GPU
+- 运行示例（仓内相对路径，第三方一键复跑）:
+  python dsh_r91_leak_check.py --train corpus/v17_train.jsonl --basis repro/eval_sets/basis63.json --fit repro/eval_sets/fitcheck_bare79.jsonl --val168 repro/eval_sets/val168.jsonl
+- 期望输出: 文本维 0 / pid 维 0 / 组合语义维 0（basis63 + fitcheck_bare + val168 三档）
+- 实跑验证: 2026-10-22 修复版三档全测 PASS（train 558 行 / 454 文本 / 498 pid；三维全 0；basis63 权威源 fa4746a6… / fitcheck_bare cb1fc9e0… / val168 c3f39d4f…）
+- 溯源: 本 manifest 由 WD 按 DSH 回证（bus #1792669869407001，LH R104 已核收）与修复版脚本实测事实整理；DSH 如有独立版本以其为准
